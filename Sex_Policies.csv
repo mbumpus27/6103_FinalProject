@@ -1,0 +1,51 @@
+Jurisdiction,Sex ed mandated,HIV ed mandated,Ed must be medically accurate,Ed must be age-appropriate,Ed must include abstinence,Ed must include contraception,Ed must cover consent,Ed must include sexual orientation and gender identity,Ed must cover healthy relationships
+Alabama,0,1,1,1,Stress,1,0,Stigmatizing,0
+Arizona,0,0,HIV,1,Stress,0,0,,0
+Arkansas,0,0,0,0,Stress,0,0,*,1
+California,1,1,1,1,Cover,1,0,Inclusive,1
+Colorado,0,0,1,1,Cover,1,1,Inclusive,1
+Connecticut,0,1,0,0,,0,0,,0
+Delaware,1,1,0,0,Stress,0,1,,1
+District of Columbia,1,1,0,1,Cover,1,1,Inclusive,1
+Florida,0,0,HIV,1,Stress,0,0,Stigmatizing*,1
+Georgia,1,1,0,0,Stress,0,0,,0
+Hawaii,1,1,1,1,Stress,1,0,,1
+Idaho,0,1,1,0,Stress,0,0,*,1
+Illinois,0,1,1,1,Cover,1,1,Inclusive,1
+Indiana,0,1,0,0,Stress,0,1,,0
+Iowa,1,0,1,1,,0,0,*,1
+Kansas,1,0,0,0,Cover,0,1,,0
+Kentucky,1,1,0,1,Stress,1,0,*,1
+Louisiana,1,1,1,0,Stress,0,0,Stigmatizing,1
+Maine,1,0,1,1,Stress,1,1,,1
+Maryland,1,1,1,0,Cover,1,1,Inclusive,1
+Massachusetts,0,0,0,0,,0,0,,1
+Michigan,0,1,1,1,Stress,0,0,,0
+Minnesota,1,1,0,0,Stress,0,0,,0
+Mississippi,1,0,0,1,Stress,0,0,Stigmatizing,0
+Missouri,0,1,1,1,Stress,1,1,,0
+Montana,1,0,0,0,,0,0,,0
+Nebraska,0,0,0,0,Stress,0,0,,1
+Nevada,1,1,HIV,1,,1,1,,1
+New Hampshire,1,1,0,0,Cover,1,0,,1
+New Jersey,1,1,1,1,Stress,0,1,Inclusive,1
+New Mexico,1,1,0,HIV,"Cover (Sex), Stress (HIV)",1,0,,1
+New York,0,1,HIV,HIV,Stress (HIV),0,0,,0
+North Carolina,1,1,1,1,Stress,1,0,Stigmatizing*,1
+North Dakota,1,1,0,0,Stress,0,0,,0
+Ohio,1,1,0,0,Stress,0,0,*,1
+Oklahoma,0,1,HIV,0,Stress,0,1,Stigmatizing*,0
+Oregon,1,1,1,1,Stress,1,1,Inclusive,1
+Pennsylvania,0,1,0,HIV,Stress (HIV),0,0,,1
+Rhode Island,1,1,1,1,Stress,1,1,Inclusive,1
+South Carolina,1,0,0,0,Stress,1,0,,1
+South Dakota,0,0,0,0,Stress,0,0,,1
+Tennessee,1,1,1,1,Stress,1,0,,1
+Texas,1,0,0,1,Stress,1,0,Stigmatizing*,1
+Utah,1,0,1,0,Stress,0,1,,0
+Vermont,1,1,0,1,Cover,1,0,,1
+Virginia,0,0,1,1,Cover,1,1,,1
+Washington,1,1,1,1,Stress,1,1,Inclusive,1
+West Virginia,1,1,0,0,Cover,1,0,*,1
+Wisconsin,0,1,HIV,1,Stress,0,0,,0
+TOTAL,29 + DC,32 + DC,26,27 + DC,43 + DC,22 + DC,16 + DC,21 + DC,32 + DC
