@@ -38,3 +38,15 @@ df["Ed must cover healthy relationships"] = df["Ed must cover healthy relationsh
 
 df.to_csv("Sex_Policies.csv", index=False)
 
+from tabula import read_pdf
+
+pdf_path = "/Users/mbumpus/Desktop/data_mining/Final_Project/2023-STD-Surveillance-State-Ranking-Tables.pdf"
+tables = read_pdf(pdf_path, pages="all")
+
+tables[0].to_csv("Congenital_Syphillis.csv", index=False)
+tables[1].to_csv("Primary_Secondary_Syphillis.csv", index=False)
+tables[2].to_csv("Gonorrhea.csv", index=False)
+tables[3].to_csv("Chlamydia.csv", index=False)
+
+
+
