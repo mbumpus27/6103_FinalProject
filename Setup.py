@@ -40,13 +40,24 @@ df.to_csv("Sex_Policies.csv", index=False)
 
 from tabula import read_pdf
 
-pdf_path = "/Users/mbumpus/Desktop/data_mining/Final_Project/2023-STD-Surveillance-State-Ranking-Tables.pdf"
-tables = read_pdf(pdf_path, pages="all")
+pdf_path = "/Users/mbumpus/Desktop/data_mining/Final_Project/std-surveillance-2019.pdf"
+dirty_tables = read_pdf(pdf_path, pages="all")
 
-tables[0].to_csv("Congenital_Syphillis.csv", index=False)
-tables[1].to_csv("Primary_Secondary_Syphillis.csv", index=False)
+tables = []
+for i, t in enumerate(dirty_tables):
+    # Skip tiny or text-only tables (often figure captions)
+    if t.shape[1] < 2 or t.shape[0] < 2:
+        continue
+    tables.append(t)
+from tabula import read_pdf
+
+for i, t in enumerate(tables):
+    print(f"\n--- Table {i+1} ({t.shape[0]} rows, {t.shape[1]} cols) ---")
+    print(t.head(3))
+'''tables[1].to_csv("Chlamydia.csv", index=False)
+tables[14].to_csv("Primary_Secondary_Syphillis.csv", index=False)
 tables[2].to_csv("Gonorrhea.csv", index=False)
-tables[3].to_csv("Chlamydia.csv", index=False)
+tables[3].to_csv("Chlamydia.csv", index=False)'''
 
 
 
