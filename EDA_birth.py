@@ -68,5 +68,35 @@ summary_df.columns = ["No Policy (0)", "Policy Present (1)"]
 summary_df.index.name = "Policy Feature"
 summary_df = summary_df.sort_index()
 
-print("\nAverage Teen Birth Rate by Policy Feature (2019):\n")
-print(summary_df)
+'''print("\nAverage Teen Birth Rate by Policy Feature (2019):\n")
+print(summary_df)'''
+
+
+plot_df = summary_df.reset_index().melt(
+    id_vars="Policy Feature",
+    var_name="Policy Status",
+    value_name="Average Teen Birth Rate"
+)
+
+# Set up style
+sns.set(style="whitegrid")
+plt.figure(figsize=(10,6))
+
+# Create grouped barplot
+sns.barplot(
+    data=plot_df,
+    x="Policy Feature",
+    y="Average Teen Birth Rate",
+    hue="Policy Status",
+    palette=["#E57373", "#64B5F6"]
+)
+
+# Customize
+plt.title("Average Teen Birth Rate by Policy Feature (2019)", fontsize=14, pad=15)
+plt.xticks(rotation=45, ha="right")
+plt.xlabel("")
+plt.ylabel("Average Births per 1,000 Females (Ages 15–19)")
+plt.legend(title="")
+plt.tight_layout()
+
+plt.show()
